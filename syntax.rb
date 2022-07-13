@@ -106,3 +106,5 @@ number = {
     one: "one",
     two: "two"
 }
+
+number[:one] # getting back value
