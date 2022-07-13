@@ -55,3 +55,7 @@ for i in 0..5
     puts "#{i}"
 end
 
+5.times do
+    puts "Hello, world!"
+end
+
