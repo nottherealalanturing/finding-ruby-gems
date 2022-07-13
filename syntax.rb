@@ -59,3 +59,7 @@ end
     puts "Hello, world!"
 end
 
+5.times do |number|
+    puts "mumber #{number}"
+end
+
