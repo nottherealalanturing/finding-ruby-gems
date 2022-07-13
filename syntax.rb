@@ -74,3 +74,16 @@ end
 
 num_array = [1,2,3,4,5]
 str_array = ['an', 'array', 'a', 'string']
+
+num_array[0]
+num_array.first(2)
+
+=begin 
+    hash
+=end
+
+numbers = {
+    "one" => 1, 
+    "two" => 2,
+    "three" => 3
+}
