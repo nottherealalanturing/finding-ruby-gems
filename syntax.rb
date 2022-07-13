@@ -66,3 +66,11 @@ end
 5.upto(10) {|num| print "#{num} " }
 
 10.downto(5) {|num| print "#{num} " }
+
+
+=begin 
+    ARRAY
+=end
+
+num_array = [1,2,3,4,5]
+str_array = ['an', 'array', 'a', 'string']
