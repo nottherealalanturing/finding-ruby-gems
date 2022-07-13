@@ -87,3 +87,22 @@ numbers = {
     "two" => 2,
     "three" => 3
 }
+
+number["one"] #return nil if empty
+number.fetch("one") #raise error if empty
+
+=begin 
+    Rocket syntax
+=end
+number = {
+    :one => "1",
+    :two => "2"
+}
+
+=begin 
+    symbol syntax
+=end
+number = {
+    one: "one",
+    two: "two"
+}
