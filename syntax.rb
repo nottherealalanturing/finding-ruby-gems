@@ -3,7 +3,7 @@ if condition
 elsif 
     do something
 else
-
+    do something
 end
 
 =begin 
@@ -42,3 +42,11 @@ until falsecondition
     do something
 end
 
+=begin 
+    range 
+    inclusive range
+    exclusive range
+=end
+
+(1..5)
+(1...5)
