@@ -108,3 +108,22 @@ number = {
 }
 
 number[:one] # getting back value
+
+=begin 
+    Method
+    have implicit return for last evaluated statements
+=end
+def my_name
+    "joe smith"
+end
+
+def method_returns_boolean?
+   return 1 > 2
+end
+
+=begin 
+    x = x.modify
+=end
+def modify!(x)
+    do something to x
+end
