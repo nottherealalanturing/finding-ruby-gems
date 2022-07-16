@@ -12,6 +12,17 @@ end
 if truecondition
     do something
 end
+    
+=begin 
+   case ~ switch statement
+=end
+case var
+when var = condition1
+    do something
+when var = condition2
+    do something
+else
+    default
 
 =begin 
     oposite of if !true
