@@ -208,3 +208,20 @@ class Class2Name < Class1Name
     end
 end    
 
+#visibility
+class Class2Name < Class1Name
+    def initialize
+        super
+    end
+    
+    public
+    def public_method
+        puts "this is a public method"
+    end
+    
+    private
+    def private_method
+        puts "this is a private method"
+    end
+    
+end    
