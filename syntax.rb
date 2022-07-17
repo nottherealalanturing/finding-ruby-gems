@@ -183,8 +183,10 @@ class Class1Name
     attr_writer :param2 #writable but not readable
     attr_accessor :param3 #readable and writable
     
+    @@name_of_class_variable = 0 #static variable
+    $name_of_global_var = 0 #global variable
     def initialize(param1, param2, param3)
-        @parameter = parameter
+        @parameter = parameter #instance variable
     end
     
     #setter for param1
@@ -205,3 +207,4 @@ class Class2Name < Class1Name
         super
     end
 end    
+
