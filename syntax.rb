@@ -209,7 +209,7 @@ class Class2Name < Class1Name
 end    
 
 #visibility
-class Class2Name < Class1Name
+class Class3Name < Class1Name
     def initialize
         super
     end
@@ -220,6 +220,26 @@ class Class2Name < Class1Name
     end
     
     private
+    def private_method
+        puts "this is a private method"
+    end
+    
+end    
+    
+#methods instance and class
+class Class4Name < Class1Name
+    def initialize
+        super
+    end
+    
+    #class method
+    public
+    def Class4Name.public_method
+        puts "this is a public method"
+    end
+    
+    #instance method
+    public
     def private_method
         puts "this is a private method"
     end
