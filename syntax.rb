@@ -151,3 +151,14 @@ end
 yield_name("parameter") do
        |x| puts "does something different"
 end
+
+
+=begin
+    Procs
+=end
+name_of_proc = Proc.new do
+    |x| do something to x
+end
+    
+[1,2,3].map!(&name_of_proc)
+
