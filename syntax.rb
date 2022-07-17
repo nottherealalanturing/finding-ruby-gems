@@ -231,3 +231,38 @@ class Class4Name < Class1Name
     
 end    
 
+#module
+#only constants and methods
+module Math
+    PI = 3.142
+
+    def ModuleMethod
+        puts "module method"
+    end
+end
+
+#load - loads module from file system and executes from there - for changing module
+
+load "SomeModule.rb"
+
+#require - add module to memory and execute from there - for modules that rarely change
+
+require SomeModule
+
+#include - add module to a class as instance attributes
+
+class SomeClass
+    include SomeModule
+
+    def initialize
+    end
+end
+
+#extend - add module to a class as static attributes
+
+class SomeClass
+    extend SomeModule
+
+    def initialize
+    end
+end
