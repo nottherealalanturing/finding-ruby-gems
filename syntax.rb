@@ -199,4 +199,9 @@ class Class1Name
      
 end
     
-
+#inheritance
+class Class2Name < Class1Name
+    def initialize
+        super
+    end
+end    
