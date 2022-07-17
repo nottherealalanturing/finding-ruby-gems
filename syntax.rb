@@ -152,6 +152,13 @@ yield_name("parameter") do
        |x| puts "does something different"
 end
 
+=begin
+   Lambda 
+   returns control back to method & checks argument list, Procs dont
+=end
+name_of_lamda = lambda do
+    |x| do something to x
+end
 
 =begin
     Procs
@@ -159,8 +166,9 @@ end
 name_of_proc = Proc.new do
     |x| do something to x
 end
-    
+
 [1,2,3].map!(&name_of_proc)
+[1,2,3].map!(&name_of_lambda)
 
 =begin
     respond to symbols
