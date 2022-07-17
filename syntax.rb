@@ -127,11 +127,18 @@ def modify!(x)
     do something to x
 end
     
-#    yield
+#    yield 1
 
 def yield_name(name)
     puts 'runs this first'
     yield(name)
+    puts 'runs last statement'
+end
+    
+#yield 2    
+def yield_name(name, &block)
+    puts 'runs this first'
+    &block.call(name)
     puts 'runs last statement'
 end
 
