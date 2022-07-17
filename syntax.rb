@@ -138,3 +138,16 @@ end
 def modify!(x)
     do something to x
 end
+    
+=begin
+    yield
+=end
+def yield_name(name)
+    puts 'runs this first'
+    yield(name)
+    puts 'runs last statement'
+end
+
+yield_name("parameter") do
+       |x| puts "does something different"
+end
