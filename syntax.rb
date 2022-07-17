@@ -174,3 +174,29 @@ end
     respond to symbols
 =end
 [1,2,4].respond_to?(:push)
+    
+    
+#class
+    
+class Class1Name
+    attr_reader :param1 #readable but not writable
+    attr_writer :param2 #writable but not readable
+    attr_accessor :param3 #readable and writable
+    
+    def initialize(param1, param2, param3)
+        @parameter = parameter
+    end
+    
+    #setter for param1
+    def set_param1=(new_value)
+        @param1 = new_value
+    end 
+    
+    #getter for param2
+    def set_param2
+        @param2
+    end 
+     
+end
+    
+
