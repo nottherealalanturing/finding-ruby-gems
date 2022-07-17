@@ -6,16 +6,14 @@ else
     do something
 end
 
-=begin 
-    opposite of unless
-=end
+#    opposite of unless
+
 if truecondition
     do something
 end
     
-=begin 
-   case ~ switch statement
-=end
+#   case ~ switch statement
+
 case var
 when var = condition1
     do something
@@ -24,36 +22,32 @@ when var = condition2
 else
     default
 
-=begin 
-    oposite of if !true
-=end
+#    oposite of if !true
+
 unless falsecondition
     do something
 end
 
-=begin 
-    dont use
-=end
+#    dont use
+
 loop do
     do something
     break if condition
 end
 
-=begin 
-    do while loop
-=end
+#    do while loop
+
 while truecondition do
     do something
 end
 
-=begin 
-    opposite of do while
-=end
+#    opposite of do while
+
 until falsecondition
     do something
 end
 
-=begin 
+=begin
     range 
     inclusive range
     exclusive range
@@ -79,9 +73,7 @@ end
 10.downto(5) {|num| print "#{num} " }
 
 
-=begin 
-    ARRAY
-=end
+#    ARRAY
 
 num_array = [1,2,3,4,5]
 str_array = ['an', 'array', 'a', 'string']
@@ -89,9 +81,8 @@ str_array = ['an', 'array', 'a', 'string']
 num_array[0]
 num_array.first(2)
 
-=begin 
-    hash
-=end
+#    hash
+
 
 numbers = {
     "one" => 1, 
@@ -102,17 +93,15 @@ numbers = {
 number["one"] #return nil if empty
 number.fetch("one") #raise error if empty
 
-=begin 
-    Rocket syntax
-=end
+#    Rocket syntax
+
 number = {
     :one => "1",
     :two => "2"
 }
 
-=begin 
-    symbol syntax
-=end
+#    symbol syntax
+
 number = {
     one: "one",
     two: "two"
@@ -120,8 +109,8 @@ number = {
 
 number[:one] # getting back value
 
-=begin 
-    Method
+=begin
+ Method
     have implicit return for last evaluated statements
 =end
 def my_name
@@ -132,16 +121,14 @@ def method_returns_boolean?
    return 1 > 2
 end
 
-=begin 
-    x = x.modify
-=end
+#    x = x.modify
+
 def modify!(x)
     do something to x
 end
     
-=begin
-    yield
-=end
+#    yield
+
 def yield_name(name)
     puts 'runs this first'
     yield(name)
@@ -160,9 +147,8 @@ name_of_lamda = lambda do
     |x| do something to x
 end
 
-=begin
-    Procs
-=end
+#    Procs
+
 name_of_proc = Proc.new do
     |x| do something to x
 end
@@ -170,9 +156,8 @@ end
 [1,2,3].map!(&name_of_proc)
 [1,2,3].map!(&name_of_lambda)
 
-=begin
-    respond to symbols
-=end
+#    respond to symbols
+
 [1,2,4].respond_to?(:push)
     
     
@@ -245,3 +230,4 @@ class Class4Name < Class1Name
     end
     
 end    
+
