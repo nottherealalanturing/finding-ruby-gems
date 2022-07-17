@@ -162,3 +162,7 @@ end
     
 [1,2,3].map!(&name_of_proc)
 
+=begin
+    respond to symbols
+=end
+[1,2,4].respond_to?(:push)
