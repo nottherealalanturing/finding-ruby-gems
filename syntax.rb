@@ -72,6 +72,7 @@ end
 
 10.downto(5) {|num| print "#{num} " }
 
+#use do...end for complex statement, {...} for simple statement
 
 #    ARRAY
 
