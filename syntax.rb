@@ -274,3 +274,8 @@ class SomeClass
     def initialize
     end
 end
+
+#inspect
+    object.inspect 
+#to string
+    object.to_s
